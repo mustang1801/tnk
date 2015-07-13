@@ -1,5 +1,6 @@
+# coding: utf-8
 words = [
-  "あぁ〜",
+  "ああー",
   "そっかそか",
   "なるほど",
   "確かに",
@@ -11,5 +12,5 @@ while true
   word = words.sample
   puts word
   `echo #{word} | say -v 'kyoko'`
-  sleep 1
+  sleep 0.1
 end
