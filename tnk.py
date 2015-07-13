@@ -11,15 +11,17 @@ signal(SIGPIPE,SIG_DFL)
 stime = 1
 
 #add tanaka-word below
-s = []
-s.append(u"あぁ〜")
-s.append(u"そっかそか")
-s.append(u"なるほど")
-s.append(u"確かに")
-s.append(u"マジっすか！")
-s.append(u"いやいやいや...")
-s.append(u"なんでやねん！")
-s.append(u"やかましいわ！")
+s = [
+    u"あぁ〜",
+    u"そっかそか",
+    u"なるほど",
+    u"確かに",
+    u"マジっすか！",
+    u"いやいやいや...",
+    u"なんでやねん！",
+    u"やかましいわ！",
+    ]
+
 
 
 
@@ -33,7 +35,6 @@ try:
         if tmp == '破門':
             print u'もうちょい待ってください・・・'
         print 'tnk>'+random.choice(s)
-        time.sleep(stime)
 except KeyboardInterrupt:
     pass
 
