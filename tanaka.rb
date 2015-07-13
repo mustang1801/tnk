@@ -8,6 +8,8 @@ words = [
   ]
 
 while true
-  puts words.sample
+  word = words.sample
+  puts word
+  `echo #{word} | say -v 'kyoko'`
   sleep 1
 end
